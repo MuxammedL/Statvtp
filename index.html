@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-sticky">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-6">
+                        <a href="index.html" class="logo">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/50/pie-chart--v1.png" alt="pie-chart--v1"/>
+                            <h3>Stat<span>VTP23</span></h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-7 col-6 d-none d-lg-block">
+                        <nav class="main-menu ">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="link active">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/members.html" class="link">İştirakçılar</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Service" class="link">
+                                        Şöbələr
+                                    </a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#">
+                                                IT (Web)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                IT (Marketinq)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mühasibatlıq
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Satınalma
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Yol-İnşaat
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                HR
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" title="Pages" class="link">Səhifələr</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#">
+                                                Vertical
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Horizontal
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bottom Menu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Box Layout
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                RTL
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-6 d-none d-lg-block">
+                        <div class="secondary-menu d-flex justify-content-end align-items-center ">
+                            <div class="right-part d-md-flex">
+                                <div class="dropdown">
+                                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="https://cdn.bitrix24.com/b26249841/resize_cache/255/a7fa78f57e73ecbd0b9500a062d0d214/main/85c/85cd07011fc62b1806e0a5c4672d0490/photo_2023-07-24_11-07-14.jpg.png" alt="profile-photo">
+                                        <span>Muxammed Layicov</span>
+                                    </div>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Profil</a></li>
+                                      <li><a class="dropdown-item" href="#">Ayarlar</a></li>
+                                      <li><a class="dropdown-item" href="./pages/login.html">Çıxış</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="left-part d-lg-none ">
+                                <button class="btn-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-lg-none text-end d-flex justify-content-end align-items-center ">
+                        <button class="btn-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="sidebar">
+            <div class="offcanvas-header">
+                <a href="index.html" class="logo">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/pie-chart--v1.png" alt="pie-chart--v1"/>
+                    <h3>Stat<span>VTP23</span></h3>
+                </a>
+                <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <a href="#">Profil</a>
+                        </div>
+                    </li> 
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <a href="index.html" class="active">Dashboard</a>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <a href="./pages/members.html">İştirakçılar</a>
+                        </div>
+                    </li>   
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <a href="#">Events</a>
+                        </div>
+                    </li>                      
+
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <a href="#">Şöbələr</a>
+                            <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body p-0">
+                                <li>
+                                    <a href="#">
+                                        IT (Web)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        IT (Marketinq)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Mühasibatlıq
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Satınalma
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Yol-İnşaat
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        HR
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>                  
+
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <a href="#">Səhifələr</a>
+                            <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body p-0">
+                                <li>
+                                    <a href="#">
+                                        Vertical
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Horizontal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Bottom Menu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Box Layout
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        RTL
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <a href="#">Ayarlar</a>
+                        </div>
+                    </li> 
+                </ul>
+                <div class="buttons">
+                    <a href="./pages/login.html" class="button btn-outline mt-3">Çıxış</a>
+                </div>               
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashborad -->
+    <section id="dashboard" class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 mt-4">
+                    <div class="card bg-yellow">
+                        <div class="card-block">
+                            <div class="row align-items-end">
+                                 <div class="col-8">
+                                    <h4 class="text-white">30200&#8380;</h4>
+                                    <h6 class="text-white ">Bütün Qazanclar</h6>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <img src="./images/icons8-chart-64.png" alt="chart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-white ">
+                                <i class="fa-regular fa-clock text-white me-2"></i><span class="now">yeniləmə vaxtı: 14:15</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mt-4">
+                    <div class="card bg-green">
+                        <div class="card-block">
+                            <div class="row align-items-end">
+                                <div class="col-8">
+                                    <h4 class="text-white">290+</h4>
+                                    <h6 class="text-white ">Səhifə Baxışları</h6>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <img src="./images/icons8-chart-64.png" alt="chart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-white">
+                                <i class="fa-regular fa-clock text-white me-2"></i><span class="now">yeniləmə vaxtı: 14:15</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mt-4">
+                    <div class="card bg-pink">
+                        <div class="card-block">
+                            <div class="row align-items-end">
+                                <div class="col-8">
+                                    <h4 class="text-white">145</h4>
+                                    <h6 class="text-white ">Tamamlanan Tapşırıq</h6>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <img src="./images/icons8-chart-64.png" alt="chart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-white">
+                                <i class="fa-regular fa-clock text-white me-2"></i></i><span class="now">yeniləmə vaxtı: 14:15</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mt-4">
+                    <div class="card bg-blue">
+                        <div class="card-block">
+                            <div class="row align-items-end">
+                                <div class="col-8">
+                                    <h4 class="text-white">500</h4>
+                                    <h6 class="text-white ">Yükləmələr</h6>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <img src="./images/icons8-chart-64.png" alt="chart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-white">
+                                <i class="fa-regular fa-clock text-white me-2"></i><span class="now">yeniləmə vaxtı: 14:15</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h2>Şöbə işçilərinin sayı</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar-chart-departments">
+                                <canvas id="barchartdepartments"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h2>İşçilərin yaşı</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="bar-chart-ages">
+                                <canvas id="barchartages"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 mt-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h2>Şöbələr</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="pie-chart">
+                                <canvas id="piechart"></canvas>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-12 col-lg-7 mt-4">
+                    <div class="info-buta">
+                        <div class="buta-group">
+                            <div class="buta-group-inner ">
+                                <a href="https://www.butagrup.com.tr/">
+                                    <img src="./images/ButaLogo3.png" alt="ButaLogo">
+                                </a>
+                                <p class="text-center mt-3">Buta Grup Medya Bilişim Teknoloji A.Ş. tam kapsamlı bilişim grubudur. Yaratıcı ekibi, müşterilerinin A’dan Z’ye tüm ihtiyaçlarına hizmet vermektedir. Firmanın kurumsal kimliğinin oluşturulmasından başlayıp sosyal medya yönetimi, web tasarım/yazılım, E-Ticaret, grafik tasarımı, marka korunumu, dijital pazarlama, yazılım geliştirme, danışmanlık gibi alanlarda işler yapmaktadır.</p>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="information-inner">
+                                <h5>Əlaqə</h5>
+                                <div class="pairs">
+                                    <div class="pair">
+                                        <h6>Email</h6>
+                                        <a href="mailto:info@butagrup.az">info@butagrup.az</a>
+                                    </div>
+                                    <div class="pair">
+                                        <h6>Telefon</h6>
+                                        <a href="tel:+994 12 564 76 60">+994 12 564 76 60</a>
+                                    </div>
+                                </div>
+                                <h5>Layihələr</h5>
+                                <div class="projects">
+                                    <a href="https://bayburtbeton.com.tr/">
+                                        <img src="./images/bayburt-beton.png" alt="bayburt-beton">
+                                    </a>
+                                    <a href="https://kaizen.az/">
+                                        <img src="./images/Kaizen_logo-removebg-preview.png" alt="Kaizen_logo">
+                                    </a>
+                                    <a href="https://1is.az/">
+                                        <img src="./images/recruitment.png" alt="recruitment">
+                                    </a>
+                                    <a href="https://www.senbaypetrol.com/">
+                                        <img src="./images/senbay-petrol.png" alt="senbay-petrol">
+                                    </a>
+                                    <a href="https://www.turkelisera.com.tr/">
+                                        <img src="./images/turkeli.png" alt="turkeli">
+                                    </a>
+                                    <a href="https://capitalist.az/">
+                                        <img src="./images/Xs8K0KV7qL1VC3n5fATxulfTd4qFaIWO.png" alt="capitalist">
+                                    </a>
+                                </div>
+                                <div class="socials">
+                                    <a class="icon facebook" href="https://www.facebook.com/ButaGrupAz/">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a class="icon linkedin" href="https://az.linkedin.com/company/butagrupaz">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a class="icon instagram" href="https://www.instagram.com/butagrup.az/">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
