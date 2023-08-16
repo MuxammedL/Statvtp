@@ -48,7 +48,7 @@ const users = [
   {id:1047,name:'Sənan',surname:'Zahidov',age:20,department:'Satınalma',university:'UNEC',email:'senan.zahidov023@gmail.com',gender:'Kişi',education:'Bakalavr'},
   {id:1048,name:'Yasəmən',surname:'Sadıqova',age:23,department:'Mühasibatlıq',university:'BAU',email:'jasminşsadigova@gmail.com',gender:'Qadın',education:'Magistratura'},
   {id:1049,name:'Ağasət',surname:'Məhərrəmov',age:21,department:'IT(Web)',university:'BMU',email:'agasfm90@gmail.com',gender:'Kişi',education:'Bakalavr'},
-  {id:1050,name:'Gülşəm',surname:'Azimli',age:20,department:'IT(Web)',university:'DİA',email:'gulshnşazimli@gmail.com',gender:'Qadın',education:'Bakalavr'},
+  {id:1050,name:'Gülşən',surname:'Azimli',age:20,department:'IT(Web)',university:'DİA',email:'gulshnşazimli@gmail.com',gender:'Qadın',education:'Bakalavr'},
   {id:1051,name:'Ramin',surname:'Allahverdiyev',age:21,department:'IT(Web)',university:'BMU',email:'ra1000allahverdiyev@gmail.com',gender:'Kişi',education:'Bakalavr'},
   {id:1052,name:'Rza',surname:'Osmanov',age:18,department:'Satınalma',university:'AZTU',email:'rzaosmanov17@gmail.com',gender:'Kişi',education:'Bakalavr'},
   {id:1053,name:'Ülkər',surname:'Hacıyeva',age:19,department:'Mühasibatlıq',university:'UNEC',email:'ulkrhaciyeva9@gmail.com',gender:'Qadın',education:'Bakalavr'},
@@ -111,13 +111,13 @@ new Chart(ctx, {
       label: 'Kişi',
       data: [`${menItWebCount}`,`${menItMarketingCount}`,`${menHrCount}`,`${menSatinalmaCount}`,`${menYolInsaatCount}`,`${menAccCount}`],
       stack: 'Stack 1',
-      backgroundColor: '#0000FF'
+      backgroundColor: '#13b496'
 
     },{
       label: 'Qadın',
       data: [`${womenItWebCount}`,`${womenItMarketingCount}`,`${womenHrCount}`,`${womenSatinalmaCount}`,`${womenYolInsaatCount}`,`${womenAccCount}`],
       stack:'Stack 2',
-      backgroundColor: '#FF0000'
+      backgroundColor: '#fff'
 
     }]
   },
@@ -199,12 +199,12 @@ new Chart(barchartages, {
       label: 'Kişi',
       data: [`${menage18}`,`${menage19}`,`${menage20}`,`${menage21}`,`${menage22}`,`${menage23}`,`${menage25}`],
       stack: 'Stack 1',
-      backgroundColor: '#0000FF'
+      backgroundColor: '#13b496'
     },{
       label: 'Qadın',
       data: [`${womenage18}`,`${womenage19}`,`${womenage20}`,`${womenage21}`,`${womenage22}`,`${womenage23}`,`${womenage25}`],
       stack:'Stack 2',
-      backgroundColor: '#FF0000'
+      backgroundColor: '#FFF'
     }]
   },
   options: {
