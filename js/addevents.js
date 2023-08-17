@@ -28,7 +28,7 @@ const users = [
     {name:'Camal',surname:'Zeynalli',age:21,department:'IT(Marketinq)',university:'UNEC',email:'zcamal0@gmail.com',gender:'Kişi',education:'Magistratura',bday:'25 Sentyabr'},
     {name:'Gülnaz',surname:'Teymurlu',age:23,department:'Mühasibatlıq',university:'BMU',email:'gulnazteymurlu@gmail.com',gender:'Qadın',education:'Bakalavr',bday:'7 Aprel'},
     {name:'Nərmin',surname:'Abbaszadə',age:20,department:'IT(Marketinq)',university:'ADNSU',email:'narminabbaszade@gmail.com',gender:'Qadın',education:'Bakalavr',bday:'17 Iyul'},
-    {name:'Zərifə',surname:'Qarayeva',age:21,department:'IT(Marketinq)',university:'AZMİU',email:'zarifagarayeva@gmail.com',gender:'Qadın',education:'Mühasibatlıq',bday:'30 Sentyabr'},
+    {name:'Zərifə',surname:'Qarayeva',age:21,department:'IT(Marketinq)',university:'AZMİU',email:'zarifagarayeva@gmail.com',gender:'Qadın',education:'Magistratura',bday:'30 Sentyabr'},
     {name:'Namik',surname:'Zöhrabov',age:22,department:'Yol-İnşaat',university:'AZMİU',email:'nzohrabov38@gmail.com',gender:'Kişi',education:'Magistratura',bday:'18 Avqust'},
     {name:'Gülnar',surname:'Məmmədova',age:21,department:'Satınalma',university:'BANM',email:'gulnarmmmdova@gmail.com',gender:'Qadın',education:'Bakalavr',bday:'19 Avqust'},
     {name:'Aydan',surname:'Mehrabova',age:21,department:'Mühasibatlıq',university:'UNEC',email:'aydan.mehrabova@bk.ru',gender:'Qadın',education:'Bakalavr',bday:'19 Avqust'},
