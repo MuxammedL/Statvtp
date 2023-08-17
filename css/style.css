@@ -105,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -4%;
   height: 150%;
   width: 150%;
+  background-color: #fff;
   bottom: 0;
   transform: skewX(45deg) scale(0, 1);
   transition: all 0.3s ease-out 0s;
@@ -114,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #login-form .btn:hover, .offcanvas .sidebar .offcanvas-body .buttons .button:hover {
   box-shadow: 0px 20px 60px 0px rgba(15, 0, 40, 0.2);
+  color: #13B497;
 }
 
 #events .events #example_wrapper .row .form-control, #events .events #example_wrapper .row .form-select, #members .card .card-body #example_wrapper .row .form-control, #members .card .card-body #example_wrapper .row .form-select {
@@ -278,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 .header .header-sticky .container .row .col-lg-3 .dropdown .dropdown-menu li a {
   color: #fff;
 }
-.header .header-sticky .container .row .col-lg-3 .dropdown .dropdown-menu li a:hover {
+.header .header-sticky .container .row .col-lg-3 .dropdown .dropdown-menu li a:hover, .header .header-sticky .container .row .col-lg-3 .dropdown .dropdown-menu li a:focus {
   background-color: #13b496;
 }
 .header .header-sticky .container .row .col-lg-3 .dropdown .dropdown-menu:after {
@@ -605,6 +607,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   color: #13b496;
 }
+#login-form .btn-outline::after {
+  background-color: #13B497;
+}
+#login-form .btn-outline:hover {
+  box-shadow: 0px 20px 60px 0px rgba(15, 0, 40, 0.2);
+  background-color: #13B497;
+  color: #fff;
+}
 #login-form .go-back {
   display: flex;
   justify-content: center;
@@ -625,6 +635,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: calc(90.6px + 2rem);
   padding-bottom: calc(90.6px + 2rem);
   background-color: #24292D;
+  min-height: 100vh;
 }
 #members .card {
   border-radius: 16px;

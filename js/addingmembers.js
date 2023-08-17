@@ -46,7 +46,7 @@ const users = [
     {name:'Nəzrin',surname:'İbrahimova',age:20,department:'Mühasibatlıq',university:'BAU',email:'nasrinibrahim2003@gmail.com',gender:'Qadın',education:'Bakalavr'},
     {name:'Fidan',surname:'Qədirova',age:23,department:'HR',university:'BDU',email:'fidan.303.qedirova@gmail.com',gender:'Qadın',education:'Bakalavr'},
     {name:'Sənan',surname:'Zahidov',age:20,department:'Satınalma',university:'UNEC',email:'senan.zahidov023@gmail.com',gender:'Kişi',education:'Bakalavr'},
-    {name:'Yasəmən',surname:'Sadıqova',age:23,department:'Mühasibatlıq',university:'BAU',email:'jasminşsadigova@gmail.com',gender:'Qadın',education:'Magistratura'},
+    {name:'Yasəmən',surname:'Sadıqova',age:23,department:'Mühasibatlıq',university:'BAU',email:'jasmin.sadigova@gmail.com',gender:'Qadın',education:'Magistratura'},
     {name:'Ağasət',surname:'Məhərrəmov',age:21,department:'IT(Web)',university:'BMU',email:'agasfm90@gmail.com',gender:'Kişi',education:'Bakalavr'},
     {name:'Gülşəm',surname:'Azimli',age:20,department:'IT(Web)',university:'DİA',email:'gulshnşazimli@gmail.com',gender:'Qadın',education:'Bakalavr'},
     {name:'Ramin',surname:'Allahverdiyev',age:21,department:'IT(Web)',university:'BMU',email:'ra1000allahverdiyev@gmail.com',gender:'Kişi',education:'Bakalavr'},
